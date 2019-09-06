@@ -7,7 +7,7 @@ $operation = readline("Введите тип операции (*, /, +, -): ");
 $file = $read_file . ".txt";
 
 if (file_exists($file) && is_readable($file)) {
-    print read($file, $operation);
+    read($file, $operation);
 } else {
     print "Файл не существует";
 }
